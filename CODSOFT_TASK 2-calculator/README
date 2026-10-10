@@ -1,0 +1,16 @@
+# Simple Calculator
+
+A small, self-contained browser calculator for the four basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+## Run it
+
+Open `calculator.html` in any modern web browser. No installation or server is required.
+
+## Use it
+
+1. Enter the first number.
+2. Choose an operation.
+3. Enter the second number.
+4. Select **Calculate** to display the result.
+
+The calculator reports an error if you try to divide by zero.

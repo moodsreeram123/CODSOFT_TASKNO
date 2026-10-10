@@ -1,0 +1,31 @@
+Focus List is a clean, dependency-free Python desktop application for planning everyday work in one place. It helps users capture tasks quickly, assign an appropriate priority, set deadlines, and see progress at a glance. Task data is stored locally, so the list is still available the next time the program is opened.
+
+## Run it
+
+From this folder, run:
+
+```powershell
+python todo_app.py
+```
+
+## Features
+
+- Add tasks with High, Medium, or Low priority
+- Optionally set a due date in `YYYY-MM-DD` form
+- View all, active, or completed tasks
+- Edit a task's title, priority, or due date
+- Mark tasks complete/active with a button or double-click
+- Delete tasks after a confirmation prompt
+- Search tasks instantly by their title
+- Clearly flag incomplete tasks whose due dates have passed
+- Remove all completed tasks in one confirmed action
+- Automatically sort active tasks by priority and due date
+- Show a live completion total in the application header
+- Saves tasks automatically in `todo_tasks.json` next to the program
+
+## How to use it
+
+1. Type a task, choose a priority, and optionally add a due date.
+2. Select a row to edit, complete, or delete it.
+3. Use the filters to focus on active or completed work, or search by task name.
+4. Double-click a task to toggle between active and completed.

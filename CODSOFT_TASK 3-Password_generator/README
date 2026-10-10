@@ -1,0 +1,45 @@
+
+
+A small Python command-line program that creates a random password using lowercase letters, uppercase letters, digits, and punctuation symbols. Each character type appears at least once.
+This command-line application creates a random password from a length you choose. It combines lowercase letters, uppercase letters, digits, and punctuation symbols to make passwords harder to guess. The generated password is displayed in the terminal.
+
+## Features
+
+- Prompts for the desired password length.
+- Includes at least one lowercase letter, one uppercase letter, one digit, and one punctuation symbol.
+- Fills the remaining characters from all four character groups and shuffles them into a random order.
+- Uses Python's `secrets` module for cryptographically strong random choices.
+- Checks the requested length and gives a helpful message for invalid input.
+
+## Requirements
+
+- Python 3.6 or newer.
+- No third-party packages are needed; the program uses Python's standard library.
+
+
+Run `python password_generator.py` from a terminal. When prompted, enter a password length of 4 or more characters. The generated password is printed on screen.
+Open a terminal in the folder containing `password_generator.py` and run:
+
+```sh
+python password_generator.py
+```
+
+If your system uses `python3` to launch Python, run `python3 password_generator.py` instead. Enter a whole-number length of at least 4 when prompted.
+
+## Example
+
+```text
+Enter the desired password length (at least 4): 16
+Generated password: q7!LzP2@cR5#tM8$
+```
+
+Your generated password will be different each time.
+
+## How generation works
+
+The program first selects one random character from each of its four character groups. It then fills the rest of the requested length by choosing randomly from the combined groups, shuffles the characters, and joins them into the final password. This guarantees each group is represented, as long as the requested length is at least four.
+
+The program uses Python's `secrets` module for secure random choices and reports an error for invalid input or lengths below 4.
+## Length and strength
+
+Longer passwords generally provide more possible combinations and are harder to guess. Choose a length that meets the requirements of the account or service where you plan to use the password. This program prints the password to the terminal; store it using a trusted password manager and avoid sharing it in chat or source control.

@@ -1,0 +1,42 @@
+# Contact Manager
+
+A simple command-line application for keeping a personal contact list. Each contact can include a name, phone number, email address, and street address. Contacts are saved to a local `contacts.json` file in the same folder as the program, so they remain available after you exit.
+
+## Features
+
+- Add contacts with a required name and optional phone, email, and address.
+- View the full contact list with each contact's name and phone number.
+- Search for a contact using part or all of a name or phone number.
+- View all details for contacts that match a search.
+- Update contact details; leave a field blank to keep its current value.
+- Delete a contact after confirming the choice.
+- Save changes automatically after adding, updating, or deleting a contact.
+- Provide clear feedback for invalid menu choices and missing search results.
+
+## Requirements
+
+- Python 3.9 or newer.
+- No third-party packages are required.
+
+## Run the program
+
+Open a terminal in the folder containing `contact_manager.py` and run:
+
+```sh
+python contact_manager.py
+```
+
+If your system uses `python3` to launch Python, run `python3 contact_manager.py` instead.
+
+## Menu options
+
+1. **Add contact** — Enter a name, phone number, email, and address. Only the name is required.
+2. **View contact list** — See the saved names and phone numbers.
+3. **Search** — Find matching contacts by name or phone number. Search ignores letter case and accepts partial matches.
+4. **Update contact** — Select a contact by its list number and enter revised details. Press Enter to keep a field unchanged.
+5. **Delete contact** — Select a contact and confirm the deletion.
+6. **Exit** — Close the program. Changes have already been saved to `contacts.json`.
+
+## Data storage
+
+The application creates `contacts.json` beside the Python script the first time a contact is added. This is a plain-text file in JSON format. Keep a backup if the contact list is important, and avoid sharing the file because it may contain personal information.

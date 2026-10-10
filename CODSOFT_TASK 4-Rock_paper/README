@@ -1,0 +1,37 @@
+# Rock, Paper, Scissors
+
+A friendly, text-based Python game where you play Rock, Paper, Scissors against the computer. Choose a move, see both selections, and get immediate feedback about the round. The game tracks wins, losses, and ties across multiple rounds.
+
+## Features
+
+- Accepts rock, paper, or scissors without regard to capitalization.
+- Chooses the computer's move at random.
+- Applies the standard rules: rock beats scissors, scissors beat paper, and paper beats rock.
+- Displays both moves and tells you whether you won, lost, or tied.
+- Tracks your score, the computer's score, and ties for the current session.
+- Lets you play another round or quit. Enter `q` at the choice prompt to exit.
+- Re-prompts with clear feedback when an entry is invalid.
+
+## Requirements
+
+- Python 3.6 or newer.
+- No third-party packages are required.
+
+## Run the game
+
+Open a terminal in the folder containing `rock_paper_scissors.py` and run:
+
+```sh
+python rock_paper_scissors.py
+```
+
+If your system uses `python3` to launch Python, run `python3 rock_paper_scissors.py` instead.
+
+## How to play
+
+1. Enter `rock`, `paper`, or `scissors` when prompted.
+2. The computer makes its choice, and the game displays both moves and the round result.
+3. Review the running score.
+4. Enter `y` to play another round or `n` to finish. You can also enter `q` at the move prompt to quit.
+
+Scores reset when you close and restart the program.
